@@ -61,7 +61,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://multipremiumstore01:vivekmmn@cluster0.09ael.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://djmixpur:djmixpur@cluster0.vywou.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
 
@@ -89,15 +89,15 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MovieMingleNet')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MovieMingleNetNetwork')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 't.me/+wrXBfPvXWhswY2Y1') # Support Chat Link Without https:// or @
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/kdmovierequest')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/KRBackup')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 't.me/KRBackup') # Support Chat Link Without https:// or @
 
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))
-BUTTON_MODE = bool(environ.get('BUTTON_MODE', True))
+BUTTON_MODE = bool(environ.get('BUTTON_MODE', False))
 MAX_BTN = bool(environ.get('MAX_BTN', True))
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 IMDB = bool(environ.get('IMDB', False))
@@ -121,14 +121,14 @@ VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', '')
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
 VERIFY_SECOND_SHORTNER = bool(environ.get('VERIFY_SECOND_SHORTNER', False))
 # if verify second shortner is True then fill below url and api
-VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', '')
-VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '')
+VERIFY_SND_SHORTLINK_URL = environ.get('VERIFY_SND_SHORTLINK_URL', 'urlstox.com')
+VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', '5bac6cb8fa7801f13d873564a08afbd9a486c09c')
 
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False)) # Set True Or False
-SHORTLINK_URL = environ.get('SHORTLINK_URL', '')
-SHORTLINK_API = environ.get('SHORTLINK_API', '')
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True)) # Set True Or False
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'urlstox.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '5bac6cb8fa7801f13d873564a08afbd9a486c09c')
 TUTORIAL = environ.get('TUTORIAL', '') # How Open Shortner Link Video Link , Channel Link Where You Upload Your Video.
 
 
@@ -157,7 +157,7 @@ YEARS = ["1900", "1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998",
 
 
 # Online Stream and Download
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set True or False
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
